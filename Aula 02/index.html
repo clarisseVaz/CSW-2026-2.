@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das Imagens</title>
+    <style>
+        /* Passo 7: a imagem da paisagem muda de tamanho quando a tela tiver 760px ou menos */
+        .paisagem {
+            width: 600px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .paisagem {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Passo 3: titulo do conteudo -->
+    <h1>Desafio das Imagens</h1>
+
+    <!-- Passo 4: subtitulo com o nome da cidade -->
+    <h2>Guarapari - ES</h2>
+
+    <!-- Passo 5: imagem da cidade -->
+    <img src="guarapari-cidade.jpg" alt="Vista da orla de Guarapari, ES" width="600">
+
+    <!-- Passo 6: imagem da cidade com legenda -->
+    <figure>
+        <img src="guarapari-praia.jpg" alt="Praia lotada em Guarapari, ES" width="600">
+        <figcaption>Praia do Morro, uma das mais visitadas de Guarapari</figcaption>
+    </figure>
+
+    <!-- Passo 7: imagem da paisagem que muda de tamanho quando a tela tiver 760px -->
+    <img class="paisagem" src="guarapari-paisagem.jpg" alt="Cachoeira na regiao de Guarapari, ES">
+
+</body>
+</html>
