@@ -1,0 +1,112 @@
+/* Fontes Baixadas */
+
+@font-face {
+    font-family: 'Top Secret';
+    src: url('/fonts/Top\ Secret.ttf');
+}
+
+@font-face {
+    font-family: 'Gimme Danger';
+    src: url('/fonts/Gimme Danger.ttf');
+}
+
+@font-face {
+    font-family: 'LL Cooper';
+    src: url('/fonts/LLCOOPER.TTF');
+}
+
+/* Google fonts */
+
+.sedan-regular {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 30px;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+}
+
+/* Other */
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: lightgrey;
+}
+
+.google-div {
+    border: 3px black dashed;
+    padding: 0px 15px 15px 15px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+    width: 660px;
+    background-color: white;
+    display: flex;
+    gap: 10px
+}
+
+.google-div2 {
+    border: 2px black solid;
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+    width: 300px;
+}
+
+
+.seletores-div {
+  border: 3px black dashed;
+    padding: 0px 15px 15px 15px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+    width: 660px;
+    background-color: white;
+    display: flex;
+    gap: 10px
+}
+
+.seletores-div2 {
+  border: 2px black solid;
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+    width: 300px;
+    display: flex;
+}
+
+.mudar-de-cor-mouse {
+  border: 2px black solid;
+  margin: 7px 2px 2px 30px;
+  height: 31px;
+  width: 30px;
+  background-color: orange;
+
+
+}
+
+.mudar-de-cor-mouse:hover {
+  background-color: red;
+}
+
+.mudar-de-cor-click {
+  border: 2px black solid;
+  margin: 7px 2px 2px 95px;
+  height: 31px;
+  width: 30px;
+  background-color: skyblue;
+
+}
