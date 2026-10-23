@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 12</title>
+</head>
+<body>
+    <h1>- <u>Aula 12</u> -</h1>
+    <h2>Refazer as páginas 5, 6 e 7 & Mãos na massa (Páginas 15 e 16).</h2>
+
+    <h3>- Alinhamento no Eixo Principal (justify-content).</h3>
+    <p style="margin-top: -18px;">Distribuindo o espaço vazio na direção principal.</p>
+
+    <h4><u>flex-start:</u></h4>
+    <div class="container" style="justify-content: flex-start;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <h4><u>flex-end:</u></h4>
+    <div class="container" style="justify-content: flex-end;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <h4><u>center:</u></h4>
+    <div class="container" style="justify-content: center;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <h4><u>space-between:</u></h4>
+    <div class="container" style="justify-content: space-between;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <h4><u>space-around:</u></h4>
+    <div class="container" style="justify-content: space-around;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+
+    <h3>- Alinhamento no Eixo Transversal (align-items).</h3>
+    <p style="margin-top: -18px;">Controla o alinhamento dos itens no eixo secundário (vertical, se a direção for row). Essencial para centralizar elementos de alturas diferentes.</p>
+
+    <!-- Corrigido de flex-center para center -->
+    <div style="display: flex; flex-direction: row; gap: 280px; margin-bottom: -15px;">
+        <h4><u>flex-start:</u></h4>
+        <h4><u>center:</u></h4> 
+        <h4><u>stretch:</u></h4>
+        <h4><u>flex-end:</u></h4>
+    </div>
+
+    <div style="display: flex; flex-direction: row; gap: 40px; height: 300px;">
+
+        <!-- Corrigido o posicionamento dos pontos e vírgulas (;) nos estilos inline abaixo -->
+        <div class="container2" style="align-items: flex-start;">
+            <div class="item"></div>
+            <div class="item" style="height: 170px;"></div>
+            <div class="item" style="height: 100px;"></div>
+        </div>
+
+        <div class="container2" style="align-items: center;">
+            <div class="item"></div>
+            <div class="item" style="height: 170px;"></div>
+            <div class="item" style="height: 100px;"></div>
+        </div>
+       
+        <div class="container2" style="align-items: stretch;">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <div class="container2" style="align-items: flex-end;">
+            <div class="item"></div>
+            <div class="item" style="height: 170px;"></div>
+            <div class="item" style="height: 100px;"></div>
+        </div>
+
+    </div>
+
+    <h3><a href="/page2.html">Ver Página 'Mãos na Massa' (Páginas 15 e 16) →</a></h3>
+        
+</body>
+</html>
