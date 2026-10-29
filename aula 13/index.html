@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para Estágio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Inscrição para Vaga de Estágio</h1>
+        <p>Preencha os campos abaixo para se candidatar.</p>
+    </header>
+
+    <main>
+        <!-- ATENÇÃO: o action precisa de um servidor que receba o POST.
+             No GitHub Pages (site estático) o envio não funciona. -->
+        <form action="/inscricao-estagio"
+              method="post"
+              enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Dados do candidato</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome completo:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        autocomplete="name"
+                        minlength="3"
+                        maxlength="100"
+                        placeholder="Digite seu nome completo"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="exemplo@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="celular">Celular:</label>
+                    <input
+                        type="tel"
+                        id="celular"
+                        name="celular"
+                        autocomplete="tel"
+                        inputmode="tel"
+                        pattern="\(?\d{2}\)?\s?9?\d{4}-?\d{4}"
+                        title="Digite o DDD e o número. Exemplo: (27) 99999-9999"
+                        placeholder="(27) 99999-9999"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="area">Área de interesse:</label>
+                    <select
+                        id="area"
+                        name="area"
+                        required
+                    >
+                        <option value="">Selecione uma área</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="dados">Dados e BI</option>
+                        <option value="administracao">Administração</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="recursos-humanos">Recursos Humanos</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="curriculo">Currículo em PDF:</label>
+                    <input
+                        type="file"
+                        id="curriculo"
+                        name="curriculo"
+                        accept="application/pdf,.pdf"
+                        aria-describedby="ajuda-curriculo"
+                        required
+                    >
+                    <small id="ajuda-curriculo">Selecione seu currículo em formato PDF.</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Consentimento LGPD</legend>
+
+                <div class="consentimento">
+                    <input
+                        type="checkbox"
+                        id="consentimento"
+                        name="consentimento"
+                        value="sim"
+                        required
+                    >
+
+                    <label for="consentimento">
+                        Declaro que li o
+                        <a href="aviso-privacidade.html" target="_blank" rel="noopener">aviso de privacidade</a>
+                        e concordo com o tratamento dos meus dados pessoais
+                        para fins de recrutamento e seleção, conforme a LGPD.
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="botoes">
+                <button type="submit">Enviar inscrição</button>
+                <button type="reset">Limpar formulário</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Processo seletivo para estágio.</p>
+    </footer>
+
+</body>
+</html>

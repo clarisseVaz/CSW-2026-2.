@@ -1,0 +1,238 @@
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f3f8;
+    color: #292a40;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin: 0 auto 25px;
+}
+
+header h1 {
+    color: #393b70;
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+header p {
+    color: #5f6070;
+    margin: 0;
+}
+
+/* Área principal */
+main {
+    width: 100%;
+}
+
+/* Formulário */
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(30, 30, 70, 0.10);
+}
+
+/* Grupos de campos */
+fieldset {
+    min-width: 0;
+    border: 1px solid #d9dbea;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 0 24px;
+}
+
+legend {
+    color: #393b70;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* Campos individuais */
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Campos de texto e lista */
+input:not([type="checkbox"]),
+select {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 12px;
+    border: 1px solid #c8cada;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #292a40;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+/* Campo de arquivo */
+input[type="file"] {
+    padding: 8px;
+    background-color: #fafaff;
+}
+
+/* Campo com erro (depois que a pessoa mexeu nele) */
+input:user-invalid,
+select:user-invalid {
+    border-color: #b3261e;
+}
+
+/* Texto auxiliar */
+small {
+    display: block;
+    margin-top: 6px;
+    color: #686982;
+    font-size: 12px;
+}
+
+/* Foco visível para teclado */
+input:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #7779c7;
+    outline-offset: 3px;
+}
+
+input:not([type="checkbox"]):focus,
+select:focus {
+    border-color: #393b70;
+}
+
+/* Links */
+a {
+    color: #393b70;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #292b58;
+}
+
+/* Consentimento LGPD */
+.consentimento {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.consentimento input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 4px 0 0;
+    accent-color: #393b70;
+    cursor: pointer;
+}
+
+.consentimento label {
+    display: block;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    min-height: 44px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"] {
+    background-color: #393b70;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #292b58;
+}
+
+button[type="reset"] {
+    background-color: #e8e9f2;
+    color: #292a40;
+}
+
+button[type="reset"]:hover {
+    background-color: #d6d8e8;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #5f6070;
+    font-size: 13px;
+}
+
+/* Respeita quem prefere menos animação */
+@media (prefers-reduced-motion: reduce) {
+    button {
+        transition: none;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 14px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botoes button {
+        width: 100%;
+    }
+}
